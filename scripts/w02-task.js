@@ -4,8 +4,7 @@
 
 /* Step 2 - Variables */
 let fullName = 'Relga-Zidrey Nkounkou';
-const date = new Date();
-let currentYear = date.getFullYear();
+const currentYear = new Date().getFullYear();
 
 let profilePicture = 'images/photo.jpg';
 
