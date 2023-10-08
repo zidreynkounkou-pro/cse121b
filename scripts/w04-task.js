@@ -14,7 +14,9 @@ let myProfile = {
 myProfile.placeLived.push(
   {
     place: "Brazzavile, Republic of Congo",
-    length: "24 years"
+    length: "20 years",
+    place: "Kinkala, Republic of Congo",
+    length: "4 years"
   }
 )
 
