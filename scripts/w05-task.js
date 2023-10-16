@@ -7,7 +7,7 @@ const templeList = [];
 
 /* async displayTemples Function */
 const displayTemples =  (temples) => {
-  templesElement.innerHTML = "";
+  
   temples.forEach(temple => {
     const article = document.createElement("article");
     const h3 = document.createElement("h3");
@@ -21,16 +21,12 @@ const displayTemples =  (temples) => {
   });
 }
 
-
-
-
 /* async getTemples Function using fetch()*/
 const getTemples = async () => {
   const response = await fetch("https://byui-cse.github.io/cse121b-ww-course/resources/temples.json");
   if (response.ok){
     const data = await response.json();
     templeList.push(...data);
-    displayTemples(templeList);
   }
 }
 
@@ -65,9 +61,7 @@ const sortBy = function(temples){
 }
 
 
-
 /* Event Listener */
-
 document.querySelector("#sortBy").addEventListener("change", () => {sortBy(templeList)});
 
 getTemples();
