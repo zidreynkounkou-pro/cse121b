@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,700;1,600;1,700&family=Roboto:wght@400;500&display=swap');
+
+/* Apply fonts to the entire body */
+body {
+  font-family: 'Noto Serif', serif, 'Roboto', sans-serif;
+}
+
+/* Center the header and apply styles */
+h1 {
+  text-align: center;
+  font-size: 30px; /* Use font-size for specifying text size */
+  font-weight: 700; /* Specify font-weight as 700 for bold */
+}
+
+/* Style the form container */
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+/* Input field styles */
+#imSearch {
+  padding: 16px;
+  width: 100%; /* Make the input field expand to 100% of its container */
+  border: 2px solid #000; /* Add a border for better visibility */
+  border-radius: 10px;
+  font-size: 20px;
+  
+}
+
+/* Search button styles */
+#searchImButton {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #444;
+  color: #fff;
+  width: auto; /* Let the button size be determined by its content */
+  margin-top: 35px;
+  font-size: 20px;
+}
+
+#searchImButton:hover {
+  background-color: tan;
+}
+#searchImButton:active{
+  color: #444;;
+
+}
+
+/* Style the results container */
+.results {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1750px;
+}
+
+/* Style individual result items */
+.result {
+  display: flex;
+  flex-direction: column; /* To stack image and link vertically */
+  justify-content: center;
+  align-items: center;
+  margin: 10px; /* Reduce margin for a tighter layout */
+  width: 30%; /* Default width for larger screens */
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a box shadow for a card-like effect */
+  text-align: center;
+}
+
+/* Style result images */
+.result img {
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 12px;
+}
+
+/* Style the footer*/
+footer {
+  background-color: #444;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 1250px) {
+  .result {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .result {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 942px) {
+  .result {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 803px) {
+  .result {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .result {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 548px) {
+  .result {
+    width: 100%;
+  }
+}
